@@ -50,9 +50,10 @@ try:
     name = int(input("Enter your name>>>  "))
 except:
     print("Re enter the value again")
-from function import function
+from Functions import Functions 
 
-student = function ("Akinola", 22, "2000")
+
+student = Functions("Akinola", 22, "2000")
 print(student.name)
 print(f"I am {student.age}, years old.  I was born In {student.year}")
 
