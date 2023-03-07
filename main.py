@@ -1,3 +1,4 @@
+#Matrices
 from math import *
 number = [1.2, 2, 324, 2]
 print(max(number))
@@ -10,12 +11,15 @@ print(matrix[0])
 for row in matrix:
     for column in row:
         print(column)
-data = ["Akinola", "17", "20"]
-date = ['ayomide', 'Akinola']
+  
+#Data cleaning using list.
+data = ["John", "17", "20"]
+date = ['Dowey', 'John']
 for datum in data:
     if datum not in date:
         date.append(datum)
 print(date)
+#Mapping
 phone = input("Phone->  ")
 digits_mapping = {
     1: "One",
@@ -27,6 +31,7 @@ output = " "
 for ph in phone:
     output += digits_mapping.get(int(ph), " ! ") + " "
 print(output)
+#Getting an emoji by inserting your mood.
 message = input("Enter your mood>>>  ")
 words = message.split(" ")
 emojis = {
@@ -37,16 +42,17 @@ output = ' '
 for word in words:
     output += emojis.get(word, word) + " "
 print(output)
+#Square root
 print(sqrt(81))
 
-
+#Try and except
 try:
     name = int(input("Enter your name>>>  "))
 except:
     print("Re enter the value again")
-from Afolabi import Afolabi
+from function import function
 
-student = Afolabi("Akinola", 22, "2000")
+student = function ("Akinola", 22, "2000")
 print(student.name)
 print(f"I am {student.age}, years old.  I was born In {student.year}")
 
